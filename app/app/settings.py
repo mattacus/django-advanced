@@ -26,7 +26,23 @@ SECRET_KEY = 'django-insecure-gv@l%v$@3sibt$bid++qeu#0##(fl4u@q055-_!qiue3-b@c(=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'django.contrib.auth',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'drf_spectacular',
+    'core',
+    'user',
+]
 
 
 # Application definition

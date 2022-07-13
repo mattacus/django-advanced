@@ -26,23 +26,7 @@ SECRET_KEY = 'django-insecure-gv@l%v$@3sibt$bid++qeu#0##(fl4u@q055-_!qiue3-b@c(=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'django.contrib.auth',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'django.contrib.staticfiles',
-    'rest_framework',
-    'rest_framework.authtoken',
-    'drf_spectacular',
-    'core',
-    'user',
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -54,7 +38,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core'
+    'rest_framework',
+    'rest_framework.authtoken',
+    'drf_spectacular',
+    'core',
+    'user'
 ]
 
 MIDDLEWARE = [
@@ -146,3 +134,7 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'core.User'
+
+REST_FRAMEWORK = {
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
+}
